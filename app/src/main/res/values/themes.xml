@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AtividadeAula5_RadioButtons_CheckBox" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.AtividadeAula5_RadioButtons_CheckBox" parent="Base.Theme.AtividadeAula5_RadioButtons_CheckBox" />
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/layoutFormulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Qual o seu nome?" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qual sua data de nascimento?"
+                android:layout_marginTop="16dp"/>
+
+            <DatePicker
+                android:id="@+id/dpDataNascimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Qual seu melhor e-mail?"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/etTelefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Qual o seu telefone?"
+                android:inputType="phone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qual o seu grau de satisfação com o nosso produto?"
+                android:layout_marginTop="16dp"/>
+
+            <RatingBar
+                android:id="@+id/rbSatisfacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Você indicaria o nosso produto?"
+                android:layout_marginTop="16dp"/>
+
+            <RatingBar
+                android:id="@+id/rbRecomendacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qual o grau de utilidade que você classifica nosso produto?"
+                android:layout_marginTop="16dp"/>
+
+            <RatingBar
+                android:id="@+id/rbUtilidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quais os pontos que você acredita que nosso produto se destaca:"
+                android:layout_marginTop="16dp"/>
+
+            <CheckBox
+                android:id="@+id/cbRobustez"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Robustez" />
+
+            <CheckBox
+                android:id="@+id/cbAgilidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agilidade" />
+
+            <CheckBox
+                android:id="@+id/cbInovacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inovação" />
+
+            <CheckBox
+                android:id="@+id/cbLentidao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lentidão" />
+
+            <CheckBox
+                android:id="@+id/cbIneficiencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ineficiência" />
+
+            <CheckBox
+                android:id="@+id/cbProdutividade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Produtividade" />
+
+            <CheckBox
+                android:id="@+id/cbBurocracia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Burocracia" />
+
+            <Button
+                android:id="@+id/btnEnviar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutConfirmacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvRespostas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"/>
+
+            <Button
+                android:id="@+id/btnConfirmar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirmar"
+                android:layout_marginTop="16dp"/>
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Voltar"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
